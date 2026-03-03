@@ -1,10 +1,9 @@
-import { useParams } from "react-router";
-import DefaultProfile from "./DefaultProfile";
-import Spinach from "./Spinach";
-import Popeye from "./Popeye";
+import { useParams, useNavigate } from "react-router";
+import { DefaultProfile, Spinach, Popeye } from "./miniRoutes";
 
 const Profile = () => {
   const { name } = useParams();
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -19,6 +18,12 @@ const Profile = () => {
       ) : (
         <DefaultProfile />
       )}
+      <button onClick={() => navigate("/profile/spinach")}>
+        Click to see spinach
+      </button>
+      <button onClick={() => navigate("/profile/popeye")}>
+        Click to see popeye
+      </button>
     </div>
   );
 };
