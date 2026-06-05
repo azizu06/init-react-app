@@ -1,16 +1,37 @@
-# React + Vite
+# init-react-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite scaffold built to practice **client-side routing with React Router**. The
+home page links out to several routed pages (Profile, About, Contact, Dashboard, Users)
+to exercise navigation and route configuration.
 
-Currently, two official plugins are available:
+![Routing demo preview](docs/assets/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- React Router setup with multiple routes and navigation links.
+- Vite dev server with fast HMR.
+- Vitest + Testing Library configured for component tests.
+- Utility libraries for data handling (`localforage`, `match-sorter`, `sort-by`).
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Tech stack
 
-## Expanding the ESLint configuration
+React · **Vite** · **React Router** · Vitest + Testing Library
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+```bash
+npm install
+npm run dev          # Vite dev server
+```
+
+Other scripts: `npm run build`, `npm run preview`, `npm test`, `npm run lint`.
+
+## What I practiced
+
+Wiring up **React Router** (routes, links, layout), bootstrapping a Vite project, and
+configuring a component testing setup with Vitest. This is an early scaffold — the
+routed pages are intentionally minimal while the focus was on routing mechanics.
+
+## License
+
+Odin Project coursework — original implementation by Aziz Umarov.
